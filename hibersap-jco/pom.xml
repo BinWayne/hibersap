@@ -44,6 +44,7 @@
           </instructions>
         </configuration>
       </plugin>
+	<!-- 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
@@ -71,6 +72,7 @@
           </execution>
         </executions>
       </plugin>
+	  -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -90,9 +92,21 @@
     <dependency>
       <groupId>org.hibersap</groupId>
       <artifactId>com.sap.conn.jco.sapjco3</artifactId>
-      <optional>true</optional>
+	   <version>3.0.12</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/sapjco3.jar</systemPath>
+      <!--<optional>true</optional>-->
     </dependency>
-
+<!--
+	<dependency>
+      <groupId>org.hibersap.dll</groupId>
+      <artifactId>com.sap.conn.jco.sapjco3</artifactId>
+	   <version>3.0.15</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/sapjco3.dll</systemPath>
+ 
+    </dependency>
+	  -->
     <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>

@@ -37,14 +37,16 @@
       <dependency>
         <groupId>org.cuckoo-ra</groupId>
         <artifactId>cuckoo-jar</artifactId>
-        <version>1.1.0</version>
-        <scope>test</scope>
+        <version>1.1.1</version>
+        <scope>system</scope>
+		<systemPath>${project.basedir}/lib/cuckoo-jar-1.1.1-SNAPSHOT.jar</systemPath>
       </dependency>
       <dependency>
         <groupId>org.cuckoo-ra</groupId>
         <artifactId>cuckoo-api</artifactId>
-        <version>1.1.0</version>
-        <scope>test</scope>
+        <version>1.1.1</version>
+        <scope>system</scope>
+		<systemPath>${project.basedir}/lib/cuckoo-api-1.1.1-SNAPSHOT.jar</systemPath>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -73,12 +75,16 @@
     <dependency>
       <groupId>org.cuckoo-ra</groupId>
       <artifactId>cuckoo-jar</artifactId>
-      <scope>test</scope>
+      <version>1.1.1</version>
+        <scope>system</scope>
+		<systemPath>${project.basedir}/lib/cuckoo-jar-1.1.1-SNAPSHOT.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.cuckoo-ra</groupId>
       <artifactId>cuckoo-api</artifactId>
-      <scope>test</scope>
+     <version>1.1.1</version>
+        <scope>system</scope>
+		<systemPath>${project.basedir}/lib/cuckoo-api-1.1.1-SNAPSHOT.jar</systemPath>
     </dependency>
   </dependencies>
 </project>
